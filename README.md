@@ -1,6 +1,6 @@
 # LexiMentis - AI-Powered Workers' Compensation Platform
 
-![LexiMentis Logo](public/LexiMentis-Logo.svg)
+![LexiMentis Logo](C:\Projects\LexiMentisWebsite\public)
 
 LexiMentis transforms workers' compensation legal practice through an integrated AI platform leveraging the Model Context Protocol (MCP) to streamline document processing, case management, and legal analysis.
 
