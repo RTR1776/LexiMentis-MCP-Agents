@@ -1,6 +1,6 @@
 # LexiMentis - AI-Powered Workers' Compensation Platform
 
-![LexiMentis Logo](C:\Projects\LexiMentisWebsite\public)
+![LexiMentis Logo](../LexiMentisWebsite/public/LexiMentis-Logo.svg)
 
 LexiMentis transforms workers' compensation legal practice through an integrated AI platform leveraging the Model Context Protocol (MCP) to streamline document processing, case management, and legal analysis.
 
@@ -141,3 +141,5 @@ Website: [https://leximentis.com](https://leximentis.com)
 Founded by L.J. Cox, a legal operations expert with 17+ years of experience, LexiMentis combines deep legal knowledge with cutting-edge AI technology to revolutionize workers' compensation practice. Our vision extends beyond workers' compensation to create the first true "law firm in a box" - a unified platform that replaces the fragmented legal tech ecosystem.
 
 Starting with Kansas and Missouri workers' compensation as our beachhead market, we're building a scalable solution that will transform legal practice management across multiple practice areas and jurisdictions.
+
+[def]: C:\Projects\LexiMentisWebsite\public
