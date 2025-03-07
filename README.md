@@ -1,5 +1,3 @@
-I'll help you draft a README for your LexiMentis webapp, reflecting both your MVP status and the vision outlined in your business plan. Here's a comprehensive README that should serve as a strong starting point:
-
 # LexiMentis - AI-Powered Workers' Compensation Platform
 
 ![LexiMentis Logo](public/LexiMentis-Logo.svg)
