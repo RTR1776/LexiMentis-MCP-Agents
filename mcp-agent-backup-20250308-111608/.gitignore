@@ -176,16 +176,3 @@ project_contents.md
 
 # example logs
 examples/**/*.jsonl
-
-# Shell and PowerShell scripts used for project maintenance
-*.sh
-*.ps1
-
-# Other common files to ignore
-.env
-__pycache__/
-*.py[cod]
-*$py.class
-venv/
-.vscode/
-.idea/
