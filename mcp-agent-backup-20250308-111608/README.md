@@ -32,20 +32,6 @@ This revolutionary MCP-powered architecture replaces the typical fragmented ecos
 - Settlement valuation assistance
 - Client portal with automated status updates
 
-## MCP Agent Tools
-
-Our platform leverages specialized MCP Agent tools to enhance AI capabilities:
-
-- **Document Processing Tool**: Extracts and analyzes text from legal documents
-- **Medical Record Analysis Tool**: Identifies medical terminology, diagnoses, and treatment plans
-- **Legal Research Tool**: Searches and retrieves relevant statutes, case law, and regulations
-- **Calendar Management Tool**: Tracks deadlines, hearings, and important dates
-- **Settlement Calculator Tool**: Evaluates case value based on jurisdiction-specific factors
-- **Document Generation Tool**: Creates legal documents using templates and case information
-- **Client Communication Tool**: Manages and tracks client interactions and updates
-
-Each tool is designed to handle specific tasks within the workers' compensation workflow, creating a comprehensive and efficient practice environment.
-
 ## Technology Stack
 
 - **Frontend**: React, TailwindCSS, Lucide Icons
