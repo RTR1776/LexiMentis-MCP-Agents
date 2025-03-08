@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <!-- Simplified gradient definitions with better contrast -->
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffedd5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed7aa;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#86efac;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="redGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fee2e2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fecaca;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Clean white background -->
+  <rect width="1200" height="900" fill="#ffffff" />
+  
+  <!-- Title of the diagram -->
+  <g id="title">
+    <text x="600" y="40" font-family="Arial" font-size="26" font-weight="bold" text-anchor="middle" fill="#111827">LexiMentis Model Context Protocol Architecture</text>
+    <text x="600" y="70" font-family="Arial" font-size="16" text-anchor="middle" fill="#4b5563">Workers' Compensation Legal AI Platform</text>
+  </g>
+
+  <!-- SECTION 1: LexiMentis Platform -->
+  <g id="lexiMentisPlatform">
+    <rect x="40" y="100" width="300" height="330" rx="10" fill="url(#blueGradient)" stroke="#3b82f6" stroke-width="2" />
+    <text x="190" y="130" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1e40af">LexiMentis Platform</text>
+    
+    <!-- Logo -->
+    <rect x="70" y="150" width="240" height="40" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="175" font-family="Arial" font-size="18" font-weight="bold" fill="#dc2626" text-anchor="middle">LexiMentis</text>
+    
+    <!-- LexiMentis Components -->
+    <rect x="60" y="200" width="260" height="35" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="223" font-family="Arial" font-size="14" text-anchor="middle">React Frontend (Vercel)</text>
+    
+    <rect x="60" y="245" width="260" height="35" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="268" font-family="Arial" font-size="14" text-anchor="middle">Model Context Protocol Client</text>
+    
+    <rect x="60" y="290" width="260" height="35" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="313" font-family="Arial" font-size="14" text-anchor="middle">Document MCP</text>
+    
+    <rect x="60" y="335" width="260" height="35" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="358" font-family="Arial" font-size="14" text-anchor="middle">Medical Records MCP</text>
+    
+    <rect x="60" y="380" width="260" height="35" rx="5" fill="#ffffff" stroke="#3b82f6" stroke-width="1" />
+    <text x="190" y="403" font-family="Arial" font-size="14" text-anchor="middle">Legal & Case Management MCP</text>
+  </g>
+
+  <!-- SECTION 2: Client Systems -->
+  <g id="clientSystems">
+    <rect x="860" y="100" width="300" height="330" rx="10" fill="url(#orangeGradient)" stroke="#f97316" stroke-width="2" />
+    <text x="1010" y="130" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#9a3412">Client Systems</text>
+    
+    <!-- Microsoft -->
+    <g id="microsoft">
+      <rect x="880" y="150" width="260" height="70" rx="5" fill="#ffffff" stroke="#0078d4" stroke-width="1" />
+      <text x="1010" y="175" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#0078d4">Microsoft</text>
+      <text x="1010" y="200" font-family="Arial" font-size="14" text-anchor="middle">Outlook/Exchange/SharePoint</text>
+    </g>
+    
+    <!-- Google -->
+    <g id="google">
+      <rect x="880" y="230" width="260" height="70" rx="5" fill="#ffffff" stroke="#34a853" stroke-width="1" />
+      <text x="1010" y="255" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#34a853">Google</text>
+      <text x="1010" y="280" font-family="Arial" font-size="14" text-anchor="middle">Drive/Workspace/Calendar</text>
+    </g>
+    
+    <!-- Practice Management -->
+    <g id="practiceManagement">
+      <rect x="880" y="310" width="260" height="70" rx="5" fill="#ffffff" stroke="#7c3aed" stroke-width="1" />
+      <text x="1010" y="335" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#7c3aed">Practice Management</text>
+      <text x="1010" y="360" font-family="Arial" font-size="14" text-anchor="middle">Clio/MyCase/Legacy Systems</text>
+    </g>
+  </g>
+
+  <!-- SECTION 3: Integration Layer -->
+  <g id="integrationLayer">
+    <rect x="450" y="100" width="300" height="150" rx="10" fill="url(#orangeGradient)" stroke="#f97316" stroke-width="2" />
+    <text x="600" y="130" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#9a3412">MCP Integration Layer</text>
+    
+    <rect x="465" y="155" width="270" height="40" rx="5" fill="#ffffff" stroke="#f97316" stroke-width="1" />
+    <text x="600" y="180" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle">Model Context Protocol Core</text>
+    
+    <rect x="465" y="205" width="130" height="35" rx="5" fill="#ffffff" stroke="#f97316" stroke-width="1" />
+    <text x="530" y="228" font-family="Arial" font-size="14" text-anchor="middle">Microsoft MCP</text>
+    
+    <rect x="605" y="205" width="130" height="35" rx="5" fill="#ffffff" stroke="#f97316" stroke-width="1" />
+    <text x="670" y="228" font-family="Arial" font-size="14" text-anchor="middle">Google MCP</text>
+    
+    <rect x="515" y="255" width="170" height="35" rx="5" fill="#ffffff" stroke="#f97316" stroke-width="1" />
+    <text x="600" y="278" font-family="Arial" font-size="14" text-anchor="middle">Practice Mgmt MCP</text>
+  </g>
+
+  <!-- LLM Reasoning Engine (Center) -->
+  <g id="llmEngine">
+    <polygon points="600,300 750,350 600,400 450,350" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+    <text x="600" y="355" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1d4ed8">LLM Reasoning Engine</text>
+    <text x="600" y="380" font-family="Arial" font-size="14" text-anchor="middle" fill="#3b82f6">Workers' Comp Domain Models</text>
+  </g>
+
+  <!-- Model Layers -->
+  <g id="modelLayers">
+    <!-- Medical Model Section -->
+    <g id="medicalModel">
+      <ellipse cx="300" cy="520" rx="170" ry="110" fill="url(#greenGradient)" stroke="#16a34a" stroke-width="2" />
+      <text x="300" y="460" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#166534">Medical Processing</text>
+      
+      <rect x="220" y="490" width="160" height="35" rx="15" fill="#ffffff" stroke="#16a34a" stroke-width="1" />
+      <text x="300" y="513" font-family="Arial" font-size="14" text-anchor="middle">Medical Records MCP Server</text>
+      
+      <rect x="220" y="535" width="160" height="35" rx="15" fill="#ffffff" stroke="#16a34a" stroke-width="1" />
+      <text x="300" y="558" font-family="Arial" font-size="14" text-anchor="middle">Open Source Med Model</text>
+      
+      <rect x="220" y="580" width="160" height="35" rx="15" fill="#ffffff" stroke="#16a34a" stroke-width="1" />
+      <text x="300" y="603" font-family="Arial" font-size="14" text-anchor="middle">Medical Terminology DB</text>
+    </g>
+    
+    <!-- Legal Model Section -->
+    <g id="legalModel">
+      <ellipse cx="600" cy="520" rx="170" ry="110" fill="url(#blueGradient)" stroke="#2563eb" stroke-width="2" />
+      <text x="600" y="460" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1e40af">Legal Processing</text>
+      
+      <rect x="520" y="490" width="160" height="35" rx="15" fill="#ffffff" stroke="#2563eb" stroke-width="1" />
+      <text x="600" y="513" font-family="Arial" font-size="14" text-anchor="middle">Legal Research MCP Server</text>
+      
+      <rect x="520" y="535" width="160" height="35" rx="15" fill="#ffffff" stroke="#2563eb" stroke-width="1" />
+      <text x="600" y="558" font-family="Arial" font-size="14" text-anchor="middle">Case Law Model</text>
+      
+      <rect x="520" y="580" width="160" height="35" rx="15" fill="#ffffff" stroke="#2563eb" stroke-width="1" />
+      <text x="600" y="603" font-family="Arial" font-size="14" text-anchor="middle">WC Statutes Database</text>
+    </g>
+    
+    <!-- Verification Model Section -->
+    <g id="verificationModel">
+      <ellipse cx="900" cy="520" rx="170" ry="110" fill="url(#redGradient)" stroke="#dc2626" stroke-width="2" />
+      <text x="900" y="460" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#b91c1c">Verification & Citations</text>
+      
+      <rect x="820" y="490" width="160" height="35" rx="15" fill="#ffffff" stroke="#dc2626" stroke-width="1" />
+      <text x="900" y="513" font-family="Arial" font-size="14" text-anchor="middle">Verification MCP Server</text>
+      
+      <rect x="820" y="535" width="160" height="35" rx="15" fill="#ffffff" stroke="#dc2626" stroke-width="1" />
+      <text x="900" y="558" font-family="Arial" font-size="14" text-anchor="middle">Citation Validation Model</text>
+      
+      <rect x="820" y="580" width="160" height="35" rx="15" fill="#ffffff" stroke="#dc2626" stroke-width="1" />
+      <text x="900" y="603" font-family="Arial" font-size="14" text-anchor="middle">Source Verification Engine</text>
+    </g>
+  </g>
+
+  <!-- Connection Lines - Simplified -->
+  <g id="connections">
+    <!-- Platform to Integration - Blue -->
+    <path d="M 340 220 L 450 180" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M 340 260 L 450 220" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M 340 360 L 450 260" fill="none" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Integration to Client Systems - Orange -->
+    <path d="M 750 180 L 880 185" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M 750 220 L 880 265" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5" />
+    <path d="M 750 260 L 880 345" fill="none" stroke="#f97316" stroke-width="2" stroke-dasharray="5,5" />
+    
+    <!-- Platform to Model Layers -->
+    <path d="M 190 420 L 250 480" fill="none" stroke="#16a34a" stroke-width="2" stroke-dasharray="4,4" />
+    <path d="M 190 400 L 520 490" fill="none" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,4" />
+    <path d="M 200 380 L 820 490" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="4,4" />
+    
+    <!-- Model Layers to LLM Engine -->
+    <path d="M 380 450 L 520 360" fill="none" stroke="#16a34a" stroke-width="2" />
+    <path d="M 600 450 L 600 400" fill="none" stroke="#2563eb" stroke-width="2" />
+    <path d="M 820 450 L 680 360" fill="none" stroke="#dc2626" stroke-width="2" />
+    
+    <!-- LLM Engine to Integration -->
+    <path d="M 600 300 L 600 250" fill="none" stroke="#3b82f6" stroke-width="2" />
+    
+    <!-- Model Interconnections -->
+    <path d="M 390 520 L 500 520" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3,3" />
+    <path d="M 700 520 L 800 520" fill="none" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3,3" />
+  </g>
+
+  <!-- Value Proposition Section -->
+  <g id="valueProposition">
+    <rect x="150" y="680" width="900" height="180" rx="10" fill="#fafafa" stroke="#6b7280" stroke-width="1" />
+    <text x="600" y="710" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle">LexiMentis Value Proposition</text>
+    
+    <!-- Workers' Comp Focus -->
+    <g id="workersCompValue">
+      <rect x="170" y="730" width="280" height="110" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1" fill-opacity="0.7" />
+      <text x="310" y="755" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#1e40af">Workers' Comp Focus</text>
+      <text x="310" y="785" font-family="Arial" font-size="14" text-anchor="middle">• Domain-Specific LLM Models</text>
+      <text x="310" y="810" font-family="Arial" font-size="14" text-anchor="middle">• Medical + Legal Integration</text>
+      <text x="310" y="835" font-family="Arial" font-size="14" text-anchor="middle">• Specialized Citation Verification</text>
+    </g>
+    
+    <!-- Integration Value -->
+    <g id="integrationValue">
+      <rect x="460" y="730" width="280" height="110" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1" fill-opacity="0.7" />
+      <text x="600" y="755" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#166534">Seamless Integration</text>
+      <text x="600" y="785" font-family="Arial" font-size="14" text-anchor="middle">• Unified Systems Access</text>
+      <text x="600" y="810" font-family="Arial" font-size="14" text-anchor="middle">• No Migration Required</text>
+      <text x="600" y="835" font-family="Arial" font-size="14" text-anchor="middle">• Model Context Protocol Architecture</text>
+    </g>
+    
+    <!-- Workflow Value -->
+    <g id="workflowValue">
+      <rect x="750" y="730" width="280" height="110" rx="8" fill="#ffedd5" stroke="#f97316" stroke-width="1" fill-opacity="0.7" />
+      <text x="890" y="755" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#9a3412">Workflow Automation</text>
+      <text x="890" y="785" font-family="Arial" font-size="14" text-anchor="middle">• Intelligent Form Generation</text>
+      <text x="890" y="810" font-family="Arial" font-size="14" text-anchor="middle">• Medical Record Analysis</text>
+      <text x="890" y="835" font-family="Arial" font-size="14" text-anchor="middle">• Brief & Pleading Preparation</text>
+    </g>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend">
+    <rect x="40" y="840" width="200" height="40" rx="5" fill="#ffffff" stroke="#6b7280" stroke-width="1" />
+    <line x1="60" y1="860" x2="90" y2="860" stroke="#3b82f6" stroke-width="2" stroke-dasharray="5,5" />
+    <text x="150" y="865" font-family="Arial" font-size="14" text-anchor="middle">MCP Communication</text>
+    
+    <rect x="250" y="840" width="200" height="40" rx="5" fill="#ffffff" stroke="#6b7280" stroke-width="1" />
+    <line x1="270" y1="860" x2="300" y2="860" stroke="#16a34a" stroke-width="2" />
+    <text x="350" y="865" font-family="Arial" font-size="14" text-anchor="middle">Model Data Flow</text>
+  </g>
+</svg>
