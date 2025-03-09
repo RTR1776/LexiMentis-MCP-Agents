@@ -1,0 +1,37 @@
+$schema: ../schema/mcp-agent.config.schema.json
+
+execution_engine: asyncio
+logger:
+  type: console
+  level: debug
+  batch_size: 100
+  flush_interval: 2
+  max_queue_size: 2048
+
+mcp:
+  servers:
+    qdrant:
+      # Vector database server
+      command: "uvx"
+      args: [
+          "mcp-server-qdrant",
+          "--qdrant-url",
+          "http://your-qdrant-server:6333", # Update with your actual Qdrant URL
+          "--collection-name",
+          "workers_comp_law", # Your collection name
+          "--embedding-model",
+          "BAAI/bge-small-en-v1.5", # Or your preferred embedding model
+        ]
+      # For SSE transport (to connect from web)
+      # transport: "sse"
+      # url: "http://your-api-endpoint/sse"
+
+    filesystem:
+      # Optional: Add filesystem access if needed
+      command: "npx"
+      args: ["-y", "@modelcontextprotocol/server-filesystem", "./data"]
+
+openai:
+  # Store API keys in mcp_agent.secrets.yaml
+  default_model: "gpt-4o"
+  reasoning_effort: "high"
