@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Vector MCP Chat</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      #chat-container {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        height: 400px;
+        padding: 10px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+      }
+      .message {
+        margin-bottom: 10px;
+        padding: 8px 12px;
+        border-radius: 6px;
+        max-width: 80%;
+      }
+      .user {
+        background-color: #e3f2fd;
+        margin-left: auto;
+        text-align: right;
+      }
+      .assistant {
+        background-color: #f1f1f1;
+      }
+      #message-form {
+        display: flex;
+      }
+      #message-input {
+        flex-grow: 1;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-right: 10px;
+      }
+      button {
+        padding: 8px 16px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+      .controls {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Neon Vector MCP Chat</h1>
+    <div class="controls">
+      <div>
+        <input type="checkbox" id="use-websocket" />
+        <label for="use-websocket">Use WebSocket (real-time)</label>
+      </div>
+      <button id="clear-btn">Clear Chat</button>
+    </div>
+    <div id="chat-container"></div>
+
+    <form id="message-form">
+      <input
+        type="text"
+        id="message-input"
+        placeholder="Type your question..."
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+
+    <script src="client.js"></script>
+    <script>
+      // Initialize the MCP client
+      const client = new MCPChatClient("http://localhost:8000");
+
+      // Get DOM elements
+      const chatContainer = document.getElementById("chat-container");
+      const messageForm = document.getElementById("message-form");
+      const messageInput = document.getElementById("message-input");
+      const clearBtn = document.getElementById("clear-btn");
+      const useWebSocketCheckbox = document.getElementById("use-websocket");
+
+      // Set up event handlers
+      messageForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const message = messageInput.value.trim();
+        if (!message) return;
+
+        // Add user message to the UI
+        appendMessage(message, "user");
+        messageInput.value = "";
+
+        // Send message to the server
+        await client.sendMessage(message);
+      });
+
+      clearBtn.addEventListener("click", () => {
+        chatContainer.innerHTML = "";
+        client.clearHistory();
+      });
+
+      useWebSocketCheckbox.addEventListener("change", (e) => {
+        client.setUseWebSocket(e.target.checked);
+      });
+
+      // Handle incoming messages
+      client.onMessage((data) => {
+        if (data.error) {
+          appendError(data.error);
+        } else if (data.message) {
+          appendMessage(data.message, "assistant");
+        }
+      });
+
+      // Helper function to add messages to the UI
+      function appendMessage(text, role) {
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("message", role);
+        messageDiv.textContent = text;
+        chatContainer.appendChild(messageDiv);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+
+      function appendError(error) {
+        const errorDiv = document.createElement("div");
+        errorDiv.classList.add("message", "error");
+        errorDiv.style.backgroundColor = "#ffebee";
+        errorDiv.textContent = `Error: ${error}`;
+        chatContainer.appendChild(errorDiv);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+    </script>
+  </body>
+</html>
